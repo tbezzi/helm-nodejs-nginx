@@ -18,7 +18,7 @@ userservice:
 
   image:
     name: userservice
-    tag: v2
+    tag: latest
     port: 4000
   
   service:
@@ -31,7 +31,7 @@ nginx:
 
   image:
     name: app-nginx
-    tag: v3
+    tag: latest
     port: 80
 
   service:
