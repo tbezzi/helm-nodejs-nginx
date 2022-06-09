@@ -21,6 +21,18 @@ app.get('/v1/users', (req, res) => {
   res.json(users);
 });
 
+app.get('/services/users', (req, res) => {
+  const users = [{
+    name: 'Tiziano Bezzi'
+  }, {
+    name: 'Matteo Foiadelli'
+  }, {
+    name: 'Simona Carrara'
+  }];
+
+  res.json(users);
+});
+
 app.listen(PORT, () => {
   console.log(`User Service running on port ${PORT}`);
 })
